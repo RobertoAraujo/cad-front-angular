@@ -13,7 +13,6 @@ import {MatInputModule} from '@angular/material/input';
 
 import { MatButtonModule } from "@angular/material/button";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 
@@ -27,6 +26,10 @@ import { CategoriaComponent} from './components/views/categoria/categoria.compon
 import { CategoriaCreateComponent } from './components/views/categoria/categoria-create/categoria-create.component';
 import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
 import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';
+import { ProdutoComponent } from './components/views/produto/produto.component';
+import { ProdutoCreteComponent } from './components/views/produto/produto-crete/produto-crete.component';
+import { ProdutoUpdateComponent } from './components/views/produto/produto-update/produto-update.component';
+import { ProdutoDaleteComponent } from './components/views/produto/produto-dalete/produto-dalete.component';
 
 
 @NgModule({
@@ -39,7 +42,11 @@ import { CategoriaUpdateComponent } from './components/views/categoria/categoria
     CategoriaComponent,
     CategoriaCreateComponent,
     CategoriaDeleteComponent,
-    CategoriaUpdateComponent
+    CategoriaUpdateComponent,
+    ProdutoComponent,
+    ProdutoCreteComponent,
+    ProdutoUpdateComponent,
+    ProdutoDaleteComponent
   ],
   imports: [
     BrowserModule,
@@ -66,5 +73,3 @@ import { CategoriaUpdateComponent } from './components/views/categoria/categoria
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-

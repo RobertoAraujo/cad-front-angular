@@ -1,0 +1,21 @@
+<form>
+    <h1>CRIANDO NOVO PRODUTO</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Nome do autor</mat-label>
+        <input matInput [(ngModel)]="produto.nome"  [formControl]="nome" required type="text" name="nome" placeholder="Ex. nome qualquer ai" maxlength="100">
+        <mat-error *ngIf="nome.invalid">{{ getMessage() }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>DESCRIÇÃO</mat-label>
+        <textarea matInput [(ngModel)]="produto.preco" [formControl]="preco" required type="text" name="preco" placeholder="Ex. preco" maxlength="2000000"></textarea>
+        <mat-error *ngIf="preco.invalid">{{ getMessage() }}</mat-error>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="create()" [disabled]="getMessage()" class="mat-elevation-z8" mat-stroked-button color="primary"> CRIAR </button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
+    </div>
+
+</form>
