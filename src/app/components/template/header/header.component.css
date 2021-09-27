@@ -1,0 +1,11 @@
+.header
+{
+    height: 10%;
+    background-color: black;
+    flex: 1 1 auto;
+}
+span
+{
+    color: white;
+    padding: 1rem;
+}

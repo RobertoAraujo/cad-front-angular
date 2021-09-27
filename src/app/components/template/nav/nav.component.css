@@ -1,0 +1,24 @@
+.container {
+    
+    height: 85%;
+}
+
+i {
+    padding-right: .6rem;
+    color: white;
+}
+p{
+    color: white;
+}
+.side {
+    background-color: black;
+    width: 12%;
+}
+
+mat-nav-list {
+    justify-content: center;
+}
+
+.nav {
+    width: 50%;
+}

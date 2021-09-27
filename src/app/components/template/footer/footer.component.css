@@ -1,0 +1,11 @@
+.footer
+{
+    height: 5%;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+}
+span
+{
+    color: white;
+}
