@@ -34,10 +34,10 @@ export class ProdutoCreteComponent implements OnInit {
   create(): void {
     this.service.create(this.produto, this.id_cat).subscribe((resposta) => {
       this.router.navigate([`categoria/${this.id_cat}/produto`]);
-      this.service.mensagem("Livro criado com sucesso!");
+      this.service.mensagem("Produto criado com sucesso!");
     }, err => {
       this.router.navigate([`categoria/${this.id_cat}/produto`]);
-      this.service.mensagem("Erro ao criar novo livro! Tente mais tarde!");
+      this.service.mensagem("Erro ao criar novo Produto! Tente mais tarde!");
     });
   }
 
@@ -47,11 +47,11 @@ export class ProdutoCreteComponent implements OnInit {
 
   getMessage() {
     if (this.nome.invalid) {
-      return "O campo TITULO deve conter entre 3 e 100 carateres";
+      return "O campo NOME deve conter entre 3 e 100 carateres";
     }
 
     if (this.preco.invalid) {
-      return "O campo NOME DO AUTOR deve conter entre 3 e 100 carateres";
+      return "O campo PRECO deve conter entre 3 e 100 carateres";
     }
 
     return false;

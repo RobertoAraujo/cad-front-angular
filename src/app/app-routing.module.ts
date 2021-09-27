@@ -44,11 +44,11 @@ const routes: Routes = [
   component: ProdutoUpdateComponent
 },
 {
-  path: 'categoria/:id_cat/livro/:id/delete',
+  path: 'categoria/:id_cat/produto/:id/delete',
   component: ProdutoDaleteComponent
 },
 {
-  path: 'categorias/:id_cat/livros/:id',
+  path: 'categoria/:id_cat/produto/:id',
   component: ProdutoComponent
 }
 ];

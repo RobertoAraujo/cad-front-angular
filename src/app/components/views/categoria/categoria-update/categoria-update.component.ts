@@ -36,7 +36,7 @@ export class CategoriaUpdateComponent implements OnInit {
 
   update(): void {
     this.service.update(this.categoria).subscribe((resposta) => {
-      this.router.navigate(["categorias"]);
+      this.router.navigate(["categoria"]);
       this.service.mensagem("Categoria atualizada com sucesso");
     }, err => {
       this.service.mensagem('Validar se todos os campos estão preenchidos corretamente!')
@@ -44,7 +44,7 @@ export class CategoriaUpdateComponent implements OnInit {
   }
 
   cancel(): void {
-    this.router.navigate(['categorias'])
+    this.router.navigate(['categoria'])
   }
 
 

@@ -11,7 +11,7 @@ import { CategoriaService } from './categoria.service';
 export class CategoriaComponent implements OnInit {
 
   categoria: Categoria[] = [];
-  displayedColumns: string[] = ["id", "nome", "descricao", "livros", "acoes"];
+  displayedColumns: string[] = ["id", "nome", "descricao", "produto", "acoes"];
 
   constructor(private service: CategoriaService, private router: Router) {}
 
@@ -27,6 +27,6 @@ export class CategoriaComponent implements OnInit {
   }
 
   navegarParaCategoriaCreate() {
-    this.router.navigate(["categorias/create"])
+    this.router.navigate(["categoria/create"])
   }
 }

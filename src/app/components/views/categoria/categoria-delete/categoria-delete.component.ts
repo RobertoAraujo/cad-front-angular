@@ -32,7 +32,7 @@ export class CategoriaDeleteComponent implements OnInit {
 
   delete(): void {
     this.service.delete(this.categoria.id!).subscribe((resposta) => {
-      this.router.navigate(['categorias'])
+      this.router.navigate(['categoria'])
       this.service.mensagem('Categoria deletada com sucesso!')
     }, err => {
       this.service.mensagem(err.error.error)
@@ -40,7 +40,7 @@ export class CategoriaDeleteComponent implements OnInit {
   }
 
   cancel(): void {
-    this.router.navigate(['categorias'])
+    this.router.navigate(['categoria'])
   }
 
 }

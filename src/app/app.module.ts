@@ -30,6 +30,7 @@ import { ProdutoComponent } from './components/views/produto/produto.component';
 import { ProdutoCreteComponent } from './components/views/produto/produto-crete/produto-crete.component';
 import { ProdutoUpdateComponent } from './components/views/produto/produto-update/produto-update.component';
 import { ProdutoDaleteComponent } from './components/views/produto/produto-dalete/produto-dalete.component';
+import { ProdutoAllComponent } from './components/views/produto/produto-all/produto-all.component';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { ProdutoDaleteComponent } from './components/views/produto/produto-dalet
     ProdutoComponent,
     ProdutoCreteComponent,
     ProdutoUpdateComponent,
-    ProdutoDaleteComponent
+    ProdutoDaleteComponent,
+    ProdutoAllComponent
   ],
   imports: [
     BrowserModule,
