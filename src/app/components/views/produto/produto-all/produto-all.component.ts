@@ -33,7 +33,7 @@ export class ProdutoAllComponent implements OnInit {
     });
   }
 
-  navegarParaCriarLivro(): void {
+  navegarParaCriarProduto(): void {
     this.router.navigate([`categoria/${this.id_cat}/produto/create`])
   }
 

@@ -3,7 +3,7 @@
       <h1> PRODUTO </h1>
     </div>
   
-    <button class="mat-elevation-z8" (click)="navegarParaCriarLivro()" mat-stroked-button color="primary"> NOVO PRODUTO </button>
+    <button class="mat-elevation-z8" (click)="navegarParaCriarProduto()" mat-stroked-button color="primary"> NOVO PRODUTO </button>
   
     <div class="mat-elevation-z8 content-table">
       <table class="table" mat-table [dataSource]="produto" >
@@ -18,16 +18,15 @@
           <td mat-cell *matCellDef="let row">{{ row.nome }}</td>
         </ng-container>
   
-       <!--  <ng-container matColumnDef="livros">
-          <th mat-header-cell *matHeaderCellDef>LER LIVRO</th>
+        <ng-container matColumnDef="Produto">
+          <th mat-header-cell *matHeaderCellDef>Ver Produto</th>
           <td mat-cell *matCellDef="let row">
-            <a class="livros" routerLink="{{ row.id }}/read">
-              <i class="material-icons">book</i>
+            <a class="Produto" routerLink="{{ row.id }}/read">
+              <i class="material-icons">assignment_turned_in</i>
             </a>
           </td>
-        </ng-container>-->
+        </ng-container>
   
-        <!-- Symbol Column -->
         <ng-container matColumnDef="acoes">
           <th class="mat-header" mat-header-cell *matHeaderCellDef>AÇÕES</th>
           <td mat-cell *matCellDef="let row">
